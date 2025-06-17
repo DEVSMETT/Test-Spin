@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<title>Spin Dat Shiz</title>
+<body>
+    <style>
+        h1 {
+            color:Red;
+            background-color: green;
+        
+        }
+
+
+    </style>
+
+    <h1>Spin Dat Shiz</h1>
+    <button id="spinButton">Spin</button>
+    <div id="result"></div>
+
+    <script>
+        document.getElementById('spinButton').addEventListener('click', async () => {
+            const response = await fetch('/spin');
+            const data = await response.json();
+            document.getElementById('result').innerText = `Result: ${data.result}`;
+        });
+    </script>
+</body>
+</html>
