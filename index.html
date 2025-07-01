@@ -6,25 +6,19 @@
 </head>
 <title>Spin Dat Shiz</title>
 <body>
-    <style>
-        h1 {
-            color:Red;
-            background-color:Grey;
-        }
-
-
-    </style>
-
-    <h1>Spin Dat Shiz</h1>
-    <button id="spinButton">Spin</button>
-    <div id="result"></div>
-
-    <script>
-        document.getElementById('spinButton').addEventListener('click', async () => {
-            const response = await fetch('/spin');
-            const data = await response.json();
-            document.getElementById('result').innerText = `Result: ${data.result}`;
-        });
-    </script>
+    <nav>
+        <a href= "/index">Main</a>
+        <a href= "/Slot-machine">Slots</a>
+    </nav>
+    
+    <h1>Welcome to my Website!</h1>
+    <h2>The main goals I want to accomplish:</h2>
+    <ul>
+        <li>Visually pleasing design</li>
+        <li>Art showcase about me</li>
+        <li>Slot Machine page</li>
+        <li>User agreement about the warnings of gambling</li>
+    </ul>
+  
 </body>
 </html>
