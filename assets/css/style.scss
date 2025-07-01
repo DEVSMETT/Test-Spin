@@ -1,0 +1,20 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: green;
+}
+h1 {
+  font-family: Impact;
+  font-size: 5rem;
+  text-shadow: 5px 5px 0px Red;
+}
+
+li {
+  background-color: gray;
+  color: White;
+}
