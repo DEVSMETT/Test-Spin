@@ -15,3 +15,13 @@ li {
   background-color: gray;
   color: White;
 }
+a {
+  display: block;
+  padding: 8px;
+  background-color:black;
+  color: white;
+}
+span {
+  background-color: red;
+  color:black;
+}
