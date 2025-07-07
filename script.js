@@ -56,7 +56,7 @@
                     function () {
                         door.dataset.spinned = "1";
                         this.querySelectorAll(".box").forEach((box) => {
-                            box.style.filter = "blur(0)";
+                            box.style.filter = "blur(1px)";
                         });
                     },
                     { once: true }
@@ -65,8 +65,8 @@
                 boxesClone.addEventListener(
                     "transitionend",
                     function(){
-                        this.querySelctorAll(".box").forEach((box, index)=>{
-                            box.style.filter="blur(1px)";
+                        this.querySelectorAll(".box").forEach((box, index)=>{
+                            box.style.filter="blur(0)";
                             if(index > 0) this.removeChild(box);
                         });
                     },
