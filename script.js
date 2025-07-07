@@ -69,7 +69,7 @@
                             box.style.filter="blur(0)";
                             if(index > 0) this.removeChild(box);
                         });
-                    };
+                    });
                     { once: true }
                 )
             }
