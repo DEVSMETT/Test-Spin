@@ -56,7 +56,7 @@
                     function () {
                         door.dataset.spinned = "1";
                         this.querySelectorAll(".box").forEach((box) => {
-                            box.style.filter = "blur(1px)";
+                            box.style.filter = "blur(0)";
                         });
                     },
                     { once: true }
@@ -66,7 +66,7 @@
                     "transitionend",
                     function(){
                         this.querySelctorAll(".box").forEach((box, index)=>{
-                            box.style.filter="blur(0)";
+                            box.style.filter="blur(1px)";
                             if(index > 0) this.removeChild(box);
                         });
                     },
