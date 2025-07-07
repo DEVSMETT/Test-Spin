@@ -69,9 +69,9 @@
                             box.style.filter="blur(0)";
                             if(index > 0) this.removeChild(box);
                         });
-                    });
+                    },
                     { once: true }
-                )
+                );
             }
             for (let i = pool.length - 1; i >= 0; i--) {
                 const box = document.createElement("div");
