@@ -9,26 +9,62 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  
 }
 h1 {
   font-family: Impact;
   font-size: 5rem;
   text-shadow: 5px 5px 0px Red;
-  color:
+  color: white;
+  text-align: center;
+  padding: 1rem;
+    margin: 0;
+    background-color: black;
+}
+h2 {
+    font-style: italic, bold;
+    color: lightgreen;
+    font-family: arial;
+    text-shadow: 4px 4px 0px darkolivegreen;
+    font-size: 3rem;
+    text-align: center;
+
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    margin: 0.5rem;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+p {
+    font-family: arial;
+    font-size: 18px;
+    
 }
 
 li {
-  background-color: gray;
+  background-color: darkgray;
   color: White;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    text-align: center;
 }
 a {
-  display: block;
+  display: inline-block;
   padding: 8px;
   background-color:black;
   color: white;
 }
-
-
+a:hover {
+    background-color: red;
+    color: black;
+}
+a:current {
+    background-color: red;
+    color: black;
+}
 *,
 *::before,
 *::after{
