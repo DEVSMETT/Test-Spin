@@ -128,3 +128,11 @@ button {
     width: 100%;
     text-align: center;;
 }
+.container {
+    max-width: 960px;
+    border-style: solid 2px black;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem;
+}
